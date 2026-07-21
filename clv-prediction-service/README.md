@@ -28,6 +28,9 @@
 2. **'total_amount'** - сумма до скидки
 3. **'product_price'** - цена товара
 
+**Запуск**
+   Запустите notebooks\analysis.ipynb
+
 ---
 # CLV-prediction-service
 
