@@ -23,7 +23,7 @@ app.add_middleware(
 async def startup_event():
     """Загружаем модель при старте сервера."""
     load_model()
-    print("✅ Модель и препроцессор загружены")
+    print("Модель и препроцессор загружены")
 
 @app.get("/")
 async def root():
