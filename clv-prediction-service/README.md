@@ -28,7 +28,7 @@
 2. **'total_amount'** - сумма до скидки
 3. **'product_price'** - цена товара
 
-**Запуск**
+## Запуск
    Запустите notebooks\analysis.ipynb
 
 ---
