@@ -18,10 +18,10 @@ class OrderFeatures(BaseModel):
     customer_rating: int
     is_returned: bool
     region: str
-    order_month: int  # добавили
+    order_month: int  
 
 class PredictionResponse(BaseModel):
     """Ответ сервера."""
-    prediction: int          # 0 или 1 (high_clv)
-    probability: float       # вероятность класса 1
+    prediction: int          
+    probability: float      
     status: str
