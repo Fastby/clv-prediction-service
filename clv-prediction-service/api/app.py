@@ -10,7 +10,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Разрешаем CORS (для тестирования из браузера)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -42,10 +42,10 @@ async def predict_endpoint(features: OrderFeatures):
     - probability: вероятность принадлежности к классу 1
     """
     try:
-        # Преобразуем Pydantic-модель в словарь
+        
         input_dict = features.dict()
         
-        # Получаем предсказание
+        
         pred_class, pred_proba = predict(input_dict)
         
         return PredictionResponse(
